@@ -40,7 +40,7 @@
 
 //                                     4th Class
 // String Indexing(Space counted)
-let Name="Iqra Ashfaq";
+// let Name="Iqra Ashfaq";
 // // i q r a   a s h f a q
 // // 0 1 2 3 4 5 6 7 8 9 10   
 // //index start with 0 and length start with 1
@@ -63,3 +63,92 @@ let Name="Iqra Ashfaq";
 // console.log(Name.toLocaleLowerCase());
 // console.log(Name.slice(0,5))
 // console.log(Name.slice(5))
+// ........................................
+// Number to String Converstion 
+    // let age=25;
+    // let str=age+"";
+    // console.log(str,typeof str);
+    // let str=String(age);
+    // console.log(str,typeof str);
+// String to Number  
+    // let name="17";
+    // let num=+name;
+    // console.log(num, typeof num);
+// ..........................
+
+//  Comparison Operator
+// ==,===,!=,!==
+// let a=10;
+// let b="10";
+// (a==b)?console.log("true"):console.log("False");   true output 
+// (a===b)?console.log("true"):console.log("False"); check data type also.
+// (a!==b)?console.log("true"):console.log("False");
+
+//                                         5Th class
+// if-Else
+/*
+// Example#1
+            let age=14;
+            if(age>=15)
+                {
+                    console.log("you are mature");
+                }
+                else
+                {
+                    console.log("you are Immature");
+                }
+     //Example 2           
+         let name="Iqra";
+         let age="25";
+         if(name[0]==="I" && age===25)
+            {
+                console.log("true");
+            }
+            else 
+            {
+                console.log("False");
+            }
+    */        
+  /*  
+    let day="Tuesday";
+        switch(day)
+        {
+            case "Monday":
+                console.log("monday");
+                break;
+                case "Tuesday":
+                console.log("Tuesday");
+                break;
+                case "Wednesday":
+                    console.log("Wednesday");
+                    break;
+                case "Thursday":
+                    console.log("Thursday");
+                    break; 
+                case "Friday":
+                    console.log("Friday");
+                    break; 
+                case "Saturday":
+                    console.log("Saturday");
+                    break;  
+                    default:
+                    console.log("");
+        }
+*/
+// ....................................
+// Loops
+    //  for(let i=1;i<=9;i++)
+    //     {
+    //         console.log(i);
+
+    //     }
+
+//     let i=0;
+//     for(i=0;i<=9;i++)
+//         {
+//             if(i==1)
+//                 continue;
+//             console.log(i);
+
+//         }
+//   console.log("value of i",i);
