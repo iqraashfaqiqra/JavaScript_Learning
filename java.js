@@ -288,4 +288,43 @@
             // const [{name},{name:Name}]=ar;
             // console.log(name,Name);
 // .................................................................. 
-// Function 
+// Function Declaration 
+            //    function fun_name(var_name1,var_name2)
+            //    {
+            //              return var_name1+var_name2;
+            //    }
+            //    const return_value=fun_name(3,5);
+            //    console.log(return_value);
+//Function Expression 
+                // const fun_name=function(var_name1,var_name2)
+                // {
+                //     return var_name1+var_name2;
+                // }
+                // console.log(fun_name(3,8));
+//Arrow functions
+                //  const fun_name=(number1,number2)=>
+                //     {
+                //         return number1+number2
+                //     }
+                //     console.log(fun_name(3,7));
+                // ....................
+                // const fun_name=number=> number%2===0;
+                // console.log(fun_name(24));
+
+// ................................................ 
+// passing number & convert Array
+            //    const fun=(...number)=>
+            //     {
+            //         console.log(number)
+            //         let total=0;
+            //         for(let num of number)
+            //             {
+            //               total+=num;
+            //             }
+            //             console.log(total);
+            //     }
+            //     fun(2,7,8,9)
+
+// ................................................................. 
+ 
+// Parameter Destruction
