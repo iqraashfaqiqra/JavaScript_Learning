@@ -188,3 +188,104 @@
     //    let Ar2=[...Ar1];
     // Ar2.push('item3')
     // console.log(Ar1,Ar2);
+// ...................................................
+//looping method
+        // 1-normal Loop
+        // 2-for of loop(access element in array directly);
+        // 3-for in loop(access index of array);
+
+// Example
+        // let fruits=['apple','Bannana','Mangoes'];
+        // 1st 
+            // for(let i=0;i<fruits.length;i++)
+            //     {
+            //         console.log(fruits[i]);
+            //     }
+        //2nd
+            //  for(let fruit of fruits)
+            //     {
+            //         console.log(fruit);
+            //     }
+         //3rd
+            //   for(let index in fruits)
+            //     {
+            //         console.log(fruits[index]);
+            //     }   
+// ........................... 
+//                                                  7th Class    
+// Object 
+        //   const person={
+        //     name:"Iqra",
+        //     age:25,
+        //     hobbies:["playing","drawing","singing"]
+        //   }
+        //     //   console.log(person);
+            //   console.log(person.name);
+            // //   console.log(person[name]);   Error 
+            // console.log(person['age']);
+            
+    // Iteration Methods
+    // 1- For In
+    // 2- Objects.Keys(object_Name);
+
+            // for(let p in person)
+            //     {
+            //         // console.log(person.p); Error
+            //         // console.log(person['p']); Error 
+            //         console.log(person[p]);
+            //     }
+
+            // let a=Object.keys(person);
+            // for(let i of a)
+            //     {
+            //         console.log(person[i]);
+            //     }
+
+        // Example
+            // let a="name";
+            // let b="age";
+            // let value1="Iqra";
+            // let value2="25";
+                //1st 
+                    // const ob={
+                    //     [a]:value1,
+                    //     [b]:value2
+                    // }
+                    // console.log(ob);
+                //2nd
+                    // const ob={};
+                    // ob[a]=value1;
+                    // ob[b]=value2;
+                    // console.log(ob);
+                    // ............................
+//object destructing
+        //    const obj={
+        //     name:"iqra",
+        //     age:10,
+        //     hobbies:["aa",'ccc',2],
+        //     class:18
+        //    }
+        //    const {name:Name,age,...restvar}=obj;
+        //    console.log(Name,restvar);
+// .................................................
+// Nested Object inside array 
+//  const ar=[{},{},{}];
+
+        // const ar=[
+        //     {
+        //         Id:1,
+        //         name:'iqra'
+        //     },
+        //     {
+        //         Id:2,
+        //         name:'Ayesha'
+        //     }
+        // ]
+    // destructing
+            // const [user1,user2,user3]=ar;
+            // console.log(user1)
+            // .........
+            // const [{name},{name:Name}]=ar;
+            // console.log(name,Name);
+// .................................................................. 
+// Function 
