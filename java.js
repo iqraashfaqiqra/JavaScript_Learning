@@ -152,3 +152,39 @@
 
 //         }
 //   console.log("value of i",i);
+
+
+//                                       6th Class 
+// non-Primitive (reference) data type
+// 1-Array
+// 2-object 
+
+// let ar=['apple','mango','bannan'];
+// console.log(typeof ar); by default typeof Array="object"
+// console.log(Array.isArray(ar));  for checking array because datatype of arr and obj is obj. 
+// let obj={};
+// console.log(typeof obj);
+// console.log(Array.isArray(obj));
+
+// Push() pop()....Ending
+// unshift() shift()-----Strting 
+        // ar.unshift("guava");
+        // console.log(ar);
+        // ar.push("guava");
+        // console.log(ar);
+//clone array 
+        // let a1=['items1','items2'];
+        // let a2=a1;
+        // console.log(a1===a2) (Answer true and if we change a1 it will effect a2 same);
+// cloning method that not effect other Array;
+    // 1- Ar2=Ar1.slice(0);
+    // 2-Ar2=[].concat[ar1];
+    // 3-Ar2=[...Ar1];  //spread operator
+
+    // Example
+    // let Ar1=['items1','items2'];
+    // // let Ar2=Ar1.slice(0);
+    // // let Ar2=[].concat(Ar1);
+    //    let Ar2=[...Ar1];
+    // Ar2.push('item3')
+    // console.log(Ar1,Ar2);
