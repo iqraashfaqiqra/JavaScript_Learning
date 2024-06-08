@@ -269,7 +269,7 @@
         //    console.log(Name,restvar);
 // .................................................
 // Nested Object inside array 
-//  const ar=[{},{},{}];
+        //  const ar=[{},{},{}];
 
         // const ar=[
         //     {
@@ -328,3 +328,220 @@
 // ................................................................. 
  
 // Parameter Destruction
+            // const person=
+            // {
+            //     name:"iqra",
+            //     age:35
+            // }
+    // 1-simple 
+                // function print_Detail(obj)
+                // {
+                //     console.log(obj.name);
+                //     console.log(obj.age);
+                // }
+                // print_Detail(person);
+    //2-para destructuring
+                // const print_detail=({name,age})=>
+                //     {
+                //         console.log(name);
+                //         console.log(age);
+                //     }
+                //     print_detail(person);
+// ............................................................
+// Call Back function (take input as function and call it)
+                //    const myfun2=()=>console.log("Call Back function");
+                //    const myfun1=(callback)=>{
+                //     console.log("First function");
+                //     callback();
+                //    }
+                //    myfun1(myfun2);
+// .................................................
+/* Important array methods
+1-ForEach (foreach take input as a call back function)
+2-Map (Rturn new array)
+3-Filter
+4-reduce 
+*/
+// For Each
+        //  simple array 
+        // const arr=[2,7,9,6];
+        // function dis(number,index)
+        // {
+        //     console.log("index is",index,"and number is",number);
+        // } 
+        // 1st method
+                 // for(let index in arr)
+                //     {
+                //       dis(arr[index],index);
+                //     }
+        //2nd 
+            //  arr.forEach(dis);
+        //example
+                // const ar=[
+                //     {name:"Iqra",age:10},
+                //     {name:"Ayesha",age:30},
+                //     {name:"Farah",age:20},
+                // ]
+                // ar.forEach(function(number,index){
+                //     console.log(number.name,index);
+                // })
+//Map
+/* 
+                    const arr=[2,8,9]
+                    const new_array=arr.map(number=>
+                        {
+                            return number*number;
+                        }
+                    )
+                    console.log(new_array);
+                   Example-2
+                        const ar=[
+                            {name:"Iqra",age:10},
+                            {name:"Ayesha",age:30},
+                            {name:"Farah",age:20},
+                        ]
+                        const new_array=ar.map(user=>
+                            {
+                                return user.name;
+                            }
+                        )
+                        console.log(new_array);
+*/
+//Reduce
+                /* const ar=[2,3,4,5,6]
+                const b=ar.reduce((accumulator,currentValue)=>
+                {
+                    return accumulator+currentValue;
+                })
+                console.log(b);
+
+    accumulator   currentValue   return
+    2              3             5
+    5              4             9
+    9              5             11
+    11             6             20
+    */
+//    Example#2
+            // const ar=[
+            //     {productId:1,productName:"Mobile",productPrice:25000},
+            //     {productId:2,productName:"Samsung",productPrice:15000},
+            //     {productId:3,productName:"Mobile",productPrice:10000}
+            // ]
+            // const a =ar.reduce((total,currentPrice)=>
+            //     {
+                
+            //         return total + currentPrice.productPrice;
+                
+            //     },0)
+            // console.log(a);
+            // .........................................
+ // sort method
+           
+                //    const ar=[
+                //     {pI:1,PN:"Oil",PP:2600},
+                //     {pI:2,PN:"Ghee",PP:1800},
+                //     {pI:3,PN:"Flour",PP:3000},
+                //     {pI:4,PN:"Salt",PP:1000},
+                //    ]
+                //    ar.sort((a,b)=>
+                // {
+                //     return a.PP-b.PP;
+                // }
+                // )
+                // console.log(ar);
+//   new array mayn store krwna
+                //   const new=ar.slice(0).sort((a,b)=>
+                // {
+                //     return a.pp-b.pp;
+                // })
+                // console.log(new);
+// ......................................................... 
+// Array Methods's
+// 1-find
+// 2-Every 
+// 3-some
+// 4-Fill
+// 5-Slpice
+
+// Find(return 1st occurence and stop,)
+        // Example#1
+                // const ar=["catt",'dog',"Lion","Buffalo"];
+                // const new_var=ar.find((number)=>
+                // {
+                //   return number.length===3
+                // })
+                // console.log(new_var);
+        // Example#2(wo user jis ki id 3 hy)
+                // const person=[
+                //     {personId:1,personName:"Iqra"},
+                //     {personId:2,personName:"Abdullah"},
+                //     {personId:3,personName:"Ayesha"},
+                // ]
+                // const value= person.find((per)=>
+                // {
+                //     return per.personId===3;
+                // })
+                // console.log(value);
+// Every
+// Check array if array having even numbers all then return true otherwise false.
+        // Example#1    
+                // const ar=[2,4,6,9];
+                // const new_var=ar.every((number)=>
+                // {
+                //     return number%2===0;
+                // })
+                // console.log(new_var);
+        // Example#2
+                // check chart if all product cose is less then 50,000
+                        // const ar=[
+                        //     {productId:1,productName:"Mobile",productPrice:25000},
+                        //     {productId:2,productName:"Samsung",productPrice:15000},
+                        //     {productId:3,productName:"Mobile",productPrice:10000}
+                        // ]
+                        // const a=ar.every((number)=>
+                        // {
+                        //     return number.productPrice<50000;
+                        // })
+                        // console.log(a);
+//some
+// kia ak bhi number asa hy jo even hy to ture return kry ga 
+                //  const ar=[1,5,8,9]
+                //  const b=ar.some((number)=>
+                // {
+                //     return number%2===0;
+                // })
+                // console.log(b);
+                // Example   koie asa product jo 50,0000 sy zyda ho 
+                    //   const ar=[
+                    //             {productId:1,productName:"Mobile",productPrice:25000},
+                    //             {productId:2,productName:"Samsung",productPrice:15000},
+                    //             {productId:3,productName:"Mobile",productPrice:50000}
+                    //         ]
+                    //         const a=ar.some((number)=>
+                    //         {
+                    //             return number.productPrice>=50000;
+                    //         })
+                    //         console.log(a);
+// fill Method 
+// value,start,end 
+                //  const array=new Array(10).fill(-1);
+                //  console.log(array);
+                // const array=[10,2,4,5,6];
+                // console.log(array.fill(0,1,4)) ;     1,2,3 index pr jo value 0 kr do 
+                
+//splice  (used if we want to insert or delete element bewteen array)
+//start,delete,insert
+                // splice(start_index,deleted values_index,insert_value);
+                // const ar=['item1','item2,item3']
+                // ar.splice(1,0,"items-2","item-3")
+                // console.log(ar);
+// ............................................................................ 
+
+// Iterable
+        // string and array iterable...object not iterable 
+//array like object 
+      //(jin per length property hoti hy)
+      //jin kah hum index access kr skty hyn
+      //string
+      
+
