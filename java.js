@@ -793,3 +793,24 @@
 // apna this nhi hota .arrow fun apni surronding sy value lyta. 
 
 
+// <--------------------------------------OOP------------------------------------->
+// Multiple User banny ki Bhjya function bna dyn or value pass kr dyn 
+/*
+  Example#1
+            function create_object(id,name)
+            {
+            const user={};
+            user.Id=id;
+            user.Name=name; 
+            user.about=function()
+            {
+                return `Id:${this.Id},Name:${this.Name}`;
+            }
+            return user;
+            }
+            const user=create_object(1,"iqra");
+            console.log(user.about())
+*/
+//   Example#2
+// jitni dafa user banny ga utna dfa about function memory myn store ho ga
+// to over come this error we define object of function in seperated object 
