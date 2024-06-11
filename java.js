@@ -695,5 +695,5 @@
         //  console.log(user.age.i)   //Error if we comment out age in object.
         console.log(user?.age?.i)   //to overcome error we use ?. combine.
 */
-
-       
+// ................................. 
+// methods 
