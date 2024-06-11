@@ -717,4 +717,74 @@
             person1.about();
 */
 // .................... 
-console.log(this);
+/*
+    console.log(this); // this statment =console.log(window);
+    function hello()
+    {
+        console.log(this)  //will return window
+    }
+    hello(); //is equal to window.hello();
+*/
+// ............................
+// call ,Apply, Bind 
+/*
+            function hello()
+            {
+                console.log("hello");
+            }
+            hello.call();
+            // ..........................
+            const perosn1={
+                id:1,
+                name:'iqra',
+                about:function()
+                {
+                    console.log(`Id:${this.id},name:${this.name}`);
+                }
+            }
+            const person2=
+            {
+                id:2,
+                name:"ayesha"
+            }
+            perosn1.about.call(person2); 
+            perosn1.about(); 
+            perosn1.about.call(); //output Undefined undefined 
+    */
+// .................................................
+        //  Example#2
+        /* 
+                function about(age,gender)
+                {
+                    console.log(`Id:${this.id},name:${this.name},age:${age},gender:${gender}`)
+                }
+                const person1={
+                    id:1,
+                    name:'Iqra'
+                }
+                const person2={
+                    id:2,
+                    name:'ayesha'
+                }
+               about.call(person1,10,'female'); 
+               about.apply(person2,[22,"female"]);  //above and this statment same.
+               const a=about.bind(person1,10,'Male')  //return function ;
+               a()
+        */
+    // Example#3
+                //  don't make this mistake 
+                /*
+                            const per={
+                                id:1,
+                                name:"iqra",
+                                about:function()
+                                {
+                                    console.log(`${this.id},${this.name}`);
+                                }
+                            }
+                            const fun=per.about;
+                            fun();  // output undefined undefined 
+                            //to overcome this error we use bind which return function 
+                            const func=per.about.bind(per);
+                            func();
+                    */
