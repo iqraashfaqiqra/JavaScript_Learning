@@ -696,4 +696,25 @@
         console.log(user?.age?.i)   //to overcome error we use ?. combine.
 */
 // ................................. 
-// methods 
+// methods (Function inside object)
+/*
+            function perosn_info()
+            {
+                console.log(`Id =${this.id} and Name=${this.name} `)
+            }
+                const person={
+                    id:1,
+                    name:"iqra",
+                    about:perosn_info
+                }
+                
+                const person1={
+                    id:2,
+                    name:"Ayesha",
+                    about:perosn_info
+                }
+            person.about();
+            person1.about();
+*/
+// .................... 
+console.log(this);
