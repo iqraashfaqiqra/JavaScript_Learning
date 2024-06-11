@@ -538,10 +538,147 @@
 // ............................................................................ 
 
 // Iterable
+        //jis pr for of loop lga skyn.
         // string and array iterable...object not iterable 
 //array like object 
       //(jin per length property hoti hy)
       //jin kah hum index access kr skty hyn
       //string
-      
+// ........................................
+// set (it's iterable)
+    //->store data.
+    //->set also have its own property. 
+    //->no-index base access.
+    //->order is not guranted.
+    //->unique item only (no duplicate item).
 
+    // Example#1
+         /*
+        const set_var=new Set([1,2,3,4]);
+        console.log(set_var);
+        const var2=new Set("abc");
+        console.log(var2);
+        set_var.add(6);
+        console.log(set_var);
+        // if(set_var.has(3))
+         if(var2.has('c'))
+            {
+                console.log("yes present")
+            }
+            else
+            {
+                console.log("not Present");
+            }
+            */
+    // Example#2
+            /*
+             const arr=['item1','item2'];
+             const var1= new Set();
+             var1.add(1);
+             var1.add(arr);
+             console.log(var1);
+             */
+    //Example#3
+             /*
+             const arr=[1,2,2,3,4,3,5,6,7,6]
+             const a=new Set(arr);
+             console.log(a);
+            // for length finding in sets 
+            let length=0;
+            for(let number of a)
+                {
+                  length++;
+                }
+                console.log(length);
+                */
+// ............................................ 
+//Map object.
+    //->Iterable
+    //->store date in order fashioned.
+    //->store key value pair
+    //->Duplicate Keys are not allowed like object.
+
+//Difference between map and object
+//Object can only have string or symbols as key
+//in map you can use anything as a key..Like array,number,string.
+
+    //   Example
+                //  object mayn jo bhi keys hon gi wo string hongi?
+                /*
+                const person={
+                    name:"iqra",
+                    age:10,
+                    1:'one' 
+                }
+                for(let key in person)
+                    {
+                        console.log(typeof key); 
+                    }
+                */
+
+        // Maps Example
+                   /*
+                    const person=new Map();
+                    person.set('name',"Iqra");
+                    person.set('age',10);
+                    person.set(1,"one");
+                    console.log(person.name) //Output undefined
+                    console.log(person['name']) //output undefined
+                    console.log(person.get('name'));
+                    console.log(person.keys());    //Important 
+                    for(let k of person.keys())
+                        {
+                            console.log(k,typeof k);
+                        }
+                    // 2nd method 
+                       for(let i of person)
+                        {
+                            console.log(i);    //Return array containing key, value[key,value];
+                            console.log(Array.isArray(i));
+                        }
+                        //For destructuring key and value 
+                        for(let [key,value] of person)
+                            {
+                                console.log(key,value);
+                            }
+
+                        */
+                 //Realistic example
+                 /*
+                        const person=
+                        {
+                            id:1,
+                            Name:"iqra"
+                        }
+                        const extraInfor=new Map();
+                        extraInfor.set(person,{age:20,gender:"Female"});
+                       console.log(extraInfor.get(person));
+                         console.log(extraInfor.get(person).gender);
+                */
+// ..........................................................
+//Clone using Object.assign
+      /*
+        const per=
+        {
+            key1:"abc",
+            key2:"def"
+        }
+        const per2=per
+        console.log(per,per2);
+        // if we add key3 in per..It will refelect per2 also 
+        per.key3="ghi"
+        console.log(per,per2);
+        //To overcome this Error, we Use clone
+        const per3={...per};
+        console.log(per3);
+        per.key4="dhjdhi";
+        console.log(per,per2,per3);
+        */
+ // Cloning 2nd Method 
+         const per={
+            name:"iqra",
+            age:10
+         }
+         const per1=Object.assign({},per)
+         console.log(per1);
+       

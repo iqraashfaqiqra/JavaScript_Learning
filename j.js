@@ -1,17 +1,26 @@
-const per=[
-    {
-        id:1,
-        name:"iqra",
-        age:25
-    },
-    {
-        id:2,
-        name:"ayesha",
-        age:20
-    },
-    {
-        id:3,
-        name:"Anza",
-        age:27
-    }
-]
+const ar=["iqs",'ra','as'];
+const a=ar.sort((number1,number2)=>
+{
+    return number1-number2;
+})
+
+console.log(a);
+
+// const per=[
+//     {
+//         name:"iqra",
+//         id:1
+//     },
+//     {
+//         name:"iqra",
+//         id:1
+//     },
+//     {
+//         name:"iqra",
+//         id:1
+//     }
+// ]
+// per.forEach((callback)=>
+// {
+//   console.log(callback);
+// })
