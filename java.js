@@ -788,3 +788,8 @@
                             const func=per.about.bind(per);
                             func();
                     */
+// ....................................... 
+// Arrow function (arrow func doesn't have this)
+// apna this nhi hota .arrow fun apni surronding sy value lyta. 
+
+
