@@ -674,11 +674,26 @@
         per.key4="dhjdhi";
         console.log(per,per2,per3);
         */
- // Cloning 2nd Method 
+ // Cloning 2nd Method
+   /* 
          const per={
             name:"iqra",
             age:10
          }
          const per1=Object.assign({},per)
+         per.gende="Female";
          console.log(per1);
+*/
+// Optional Chaining 
+/*
+        const user={
+            name:"iqra",
+            // age:{i:17,b:10}
+        }
+        console.log(user);
+        console.log(user.name); //if we comment out name:"iqra" output undefined.
+        //  console.log(user.age.i)   //Error if we comment out age in object.
+        console.log(user?.age?.i)   //to overcome error we use ?. combine.
+*/
+
        
