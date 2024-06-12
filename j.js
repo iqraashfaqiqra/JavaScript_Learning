@@ -1,13 +1,15 @@
+
+   
 function create_object(id,name)
 {
- const user={};
+ const user=Object.create(create_object.prototype);
  user.Id=id;
- user.Name=name; 
- user.about=function()
- {
-    return `Id:${this.Id},Name:${this.Name}`;
- }
+ user.Name=name;
  return user;
 }
-const user=create_object(1,"iqra");
-console.log(user.about())
+create_object.prototype.about=function()
+{
+   console.log(`${this.Id},${this.Name}`)
+}
+const user=create_object(1,"viqra");
+user.about();

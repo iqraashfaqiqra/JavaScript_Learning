@@ -814,3 +814,105 @@
 //   Example#2
 // jitni dafa user banny ga utna dfa about function memory myn store ho ga
 // to over come this error we define object of function in seperated object 
+/*            
+            const userMethod={
+                about()
+                {
+                console.log(`${this.Id},${this.Name}`)
+                }
+            }
+            function create_object(id,name)
+            {
+            const user={};
+            user.Id=id;
+            user.Name=name;
+            user.about=userMethod.about; 
+            return user;
+            }
+            const user=create_object(1,"viqra");
+            user.about();
+*/
+// Example#3
+//Issue in above code if we have multiple methods we need to created methods in object
+//and must asign address in function .
+//to overcome this problem we have another solution 
+
+//Learning with simple example.
+         /*
+                const obj1={
+                    key1:"value1",
+                    key2:'value2'
+                }
+                //  const obj2={
+                //     key3:"value3"
+                //  }
+         // we want that if we call obj2 and wanna access key2 value 
+        //so we create empty obj2
+                            const obj2=Object.create(obj1);
+                            obj2.key3="Value4";
+                            console.log(obj2.key1);
+            */
+ // [[prototype]],--prototype--   both same.
+//  Example
+/* 
+                const userMethod={
+                    about()
+                    {
+                    console.log(`${this.Id},${this.Name}`)
+                    },
+                    hobby()
+                    {
+                        console.log('love singjng')
+                    }
+                }
+                function create_object(id,name)
+                {
+                // const user={};
+                const user=Object.create(userMethod)
+                user.Id=id;
+                user.Name=name;
+                return user;
+                }
+                const user=create_object(1,"viqra");
+                user.about();
+                user.hobby();
+*/
+// ....................................................
+// Prototype
+//when we create function, It's provide free space which is called prototype.
+ //Function act like object ex: helo.call(),hello.apply(),hello.bind();
+/*Example#1
+                    function hello()
+                    {
+                        console.log("Hello world");
+                    }
+                    console.log(hello.prototype);  //{} empty object that contain constructor which have hello function 
+                    //can add key value
+                    hello.prototype.abc="abc";
+                    hello.prototype.xyz="xyz";
+                    hello.prototype.sing=function()
+                    {
+                        console.log("sing");
+                        }
+                    console.log(hello.prototype);
+                    hello.prototype.sing();
+*/
+// Example#2 
+//2nd above example: In this example we create new object and assign in function 
+//but function already give free space so we use it .
+            
+   /*
+            function create_object(id,name)
+            {
+            const user=Object.create(create_object.prototype);
+            user.Id=id;
+            user.Name=name;
+            return user;
+            }
+            create_object.prototype.about=function()
+            {
+            console.log(`${this.Id},${this.Name}`)
+            }
+            const user=create_object(1,"viqra");
+            user.about();
+    */
