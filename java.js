@@ -916,3 +916,34 @@
             const user=create_object(1,"viqra");
             user.about();
     */
+// ........................... 
+// New Keyword
+//1-> create empty object //this={}
+//2->Return this
+//3->Object.create(createUser.prototype) //Manual Kam khtm ho gya new khud sy prototype set kry ga
+
+// Example:
+/*
+          function createUser(firstName,age)
+          {
+            this.firstName=firstName;
+            this.age=age;
+          }
+          createUser.prototype.about=function()
+          {
+            console.log(`Name:${this.firstName},Age:${this.age}`);
+          }
+          const user1=new createUser('Iqra',25);
+          user1.about();
+
+    // for displaying keys 
+                for(let k in user1)
+                    {
+                       // console.log(k); //it'll show about method also key .
+                       //to overcome this use hasOwnproperty.
+                       if(user1.hasOwnProperty(k))
+                        {
+                            console.log(k)
+                        }
+                    }
+*/
