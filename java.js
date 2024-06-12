@@ -950,8 +950,9 @@
 // ................. 
 // New 
 //Example#1
-const ar=new Array(1,2,2);
-console.log(Array.prototype);
-//Example#2
-const a=[1,2,3,4]
-console.log(Object.getPrototypeOf(a));
+// const ar=new Array(1,2,2);
+// console.log(Array.prototype);
+// //Example#2
+// const a=[1,2,3,4]
+// console.log(Object.getPrototypeOf(a));
+
