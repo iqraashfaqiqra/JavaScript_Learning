@@ -955,4 +955,103 @@
 // //Example#2
 // const a=[1,2,3,4]
 // console.log(Object.getPrototypeOf(a));
+// ..................................................
+            // ................................Classes...................
+            /*
+                        function createUser(firstName,age)
+                        {
+                        this.firstName=firstName;
+                        this.age=age;
+                        }
+                        createUser.prototype.about=function()
+                        {
+                        console.log(`Name:${this.firstName},Age:${this.age}`);
+                        }
+                        const user1=new createUser('Iqra',25);
+                        user1.about();
+                */
+//    Using above example with clases
+/*                        class createUser{
+                            constructor(firstname,age)
+                            {
+                                this.firstName=firstname;
+                                this.age=age;
+                            }
+                            about()
+                            {
+                                console.log(`Name:${this.firstName},Age:${this.age}`);
+                            }
 
+                        }
+                        const user1=new createUser("iqra",10);
+                        user1.about()
+*/
+// Example #2
+/*
+                    class Animal {
+                        constructor(name, age){
+                            this.name = name;
+                            this.age = age;
+                        }
+
+                        eat(){
+                            return `${this.name} is eating`;
+                        }
+
+                        isSuperCute(){
+                            return this.age <= 1;
+                        }
+
+                        isCute(){
+                            return true;
+                        }
+                    }
+                    const cat1=new Animal("Miaon",25);
+                    console.log(cat1);
+                    console.log(cat1.eat())
+                    console.log(cat1.isCute())
+                    console.log(cat1.isSuperCute())
+//Inheritence 
+//we want dog class having all properties and method same in animal 
+ 
+                            class Dog extends Animal{
+                                
+                            } 
+                            const dog=new Dog('Bukhi',2);
+                            console.log(dog);
+    */
+//    ..........................
+/*
+                    class Animal {
+                        constructor(name, age){
+                            this.name = name;
+                            this.age = age;
+                        }
+
+                        eat(){
+                            return `${this.name} is eating`;
+                        }
+
+                        isSuperCute(){
+                            return this.age <= 1;
+                        }
+
+                        isCute(){
+                            return true;
+                        }
+                    }
+
+                    class Dog extends Animal{
+                        constructor(name, age, speed){
+                            super(name,age);
+                            this.speed = speed;
+                        }
+
+                        run(){
+                            return `${this.name} is running at ${this.speed}kmph`
+                        }
+                    } 
+                    // object / instance 
+                    const tommy = new Dog("tommy", 3,45);
+                    console.log(tommy.run());
+*/
