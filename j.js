@@ -1,39 +1,27 @@
-// function user_detail()
-// {
-//     console.log(`${this.id},${this.name},${this.age}`)
-// }
-// const user={
-//     id:1,
-//     name:"iqra",
-//     age:25,
-//     about:user_detail
-// }
-// const user1={
-//     id:2,
-//     name:"Ayesha",
-//     age:28,
-//     about:user_detail
-// }
-// const user3={
-//     id:3,
-//     name:"Faiza",
-//     age:30,
-//     about:user_detail
-// }
-// user1.about();
-// console.log(user1);
-function about()
+class dog
 {
-  console.log(`${this.id},${this.name}`)
+  constructor(name,age)
+  {
+    this.name=name;
+    this.age=age;
+  }
+  eat()
+  {
+    console.log("Cat Eat")
+  }
 }
-const user1=
-{
-    id:1,
-    name:"iqra",
+class cat extends dog{
+  constructor(name,age,gender)
+  {
+    super(name,age);
+    this.gender=gender;
+  }
 }
-const user2=
-{
-    id:2,
-    name:"Ayesha"
-}
-about.call(user1)
+const dog1=new cat('Dogi',25,"female");
+console.log(dog1);
+dog1.eat();
+
+
+
+
+
