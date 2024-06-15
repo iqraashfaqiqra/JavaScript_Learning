@@ -11,5 +11,7 @@ sb sy phli line execute hony sy phly code compile hota hy
         3->code Generation(A.S.T sy asa code generate krty jo agy Execute ho sky).
 2->Code Execuation Phase.
     In J.s code execute inside execution context.
+    ->create global execution context 
+    . creatin phase
+    .code execution phase.
     
-
