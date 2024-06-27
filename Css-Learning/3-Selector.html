@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slector</title>
+    <style>
+        /* section.action p         <!--sary selector jo section myn hon chahya article mayn hon-->
+        {
+            color:red; 
+        } */
+
+         /* section.action>p          //Asy selector jo action kay child hyn agr andar article hy wo nhi chnge ho ga
+         {
+            color:green;
+    }*/
+    /* h1+p          both having same parent but p element come after h1
+    {
+        color:yellow;
+    } */
+/* ................................. */
+     /* attribut Selector  */
+  /* input[type="text"]
+{
+    border:2px solid gray;
+    background-color: aqua;
+    color:pink;
+    font-weight: 900;
+}
+input[type ^="p"]  start
+{
+    background-color: blueviolet;
+}
+input[type $='l']      end
+{
+    background-color: brown;
+} */
+            </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Logo</div>
+            <ul class="Navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="action">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus esse corporis dolorum dolor totam?
+            </p>
+            <article>
+                <h1>Iqra Ashfaq</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+    </main>
+
+    <a href="HTTP//www.google.com">Google</a> <br>
+    <a href="HTTP//www.google.abc">Google</a>  <br>
+    <a href="facebook.com">Facebook</a>
+    <form >
+        <input type="text" name="" id="">
+        <br>
+        <input type="password">
+        <br>
+        <input type="email">
+        <br>
+        <input type="submit"  value="Submit">
+    </form>
+</body>
+</html>

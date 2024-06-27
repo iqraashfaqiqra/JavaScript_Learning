@@ -1,0 +1,16 @@
+1-> header
+2-> nav
+3-> main
+4-> section
+5-> aside
+6-> article
+7-> figure 
+8-> figcaption
+9-> summary
+10-> footer
+......................................
+HTMl Entites
+copyright &copy;
+<         &lt;
+>         &gt;
+space     &nbsp;
