@@ -14,4 +14,4 @@ sb sy phli line execute hony sy phly code compile hota hy
     ->create global execution context 
     . creatin phase
     .code execution phase.
-    
+*/
