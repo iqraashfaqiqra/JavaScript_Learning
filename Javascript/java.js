@@ -15,3 +15,24 @@ sb sy phli line execute hony sy phly code compile hota hy
     . creatin phase
     .code execution phase.
 */
+// .....................................
+/*Selector 
+1-getElementById
+2-getElementByClassName(HTML Collection)
+3-querySelector
+4-queryselectorAll(NodeList)
+*/
+// const a=document.getElementById("main-heading")
+// console.log(a);
+// const b=document.querySelector('header')
+// console.log(b.getAttribute('class'));
+const lis=document.querySelectorAll('.nav-item')
+console.log(lis);
+console.log(lis.dir)
+for(let i=0; i<lis.length;i++)
+{
+    lis[i].style.background="red";
+    //  lis[i].children.style.color="black"
+}
+// const li=document.getElementsByClassName('nav-item')
+// console.log(li)
