@@ -16,23 +16,34 @@ sb sy phli line execute hony sy phly code compile hota hy
     .code execution phase.
 */
 // .....................................
+// HTMl Same As object in Browser........document
+//console.log(document)
+// console.dir(document)   show javascript directory.
+// .......................
 /*Selector 
-1-getElementById
-2-getElementByClassName(HTML Collection)
-3-querySelector
-4-queryselectorAll(NodeList)
+    1-getElementById
+    2-getElementByClassName(HTML Collection)
+    3-querySelector
+    4-queryselectorAll(NodeList)
 */
-// const a=document.getElementById("main-heading")
-// console.log(a);
-// const b=document.querySelector('header')
-// console.log(b.getAttribute('class'));
-const lis=document.querySelectorAll('.nav-item')
-console.log(lis);
-console.log(lis.dir)
-for(let i=0; i<lis.length;i++)
-{
-    lis[i].style.background="red";
-    //  lis[i].children.style.color="black"
-}
-// const li=document.getElementsByClassName('nav-item')
-// console.log(li)
+// ...............................
+/* 
+TextContent
+innertext
+*/
+        // const a=document.querySelector('#main-heading');
+        // console.log(a.textContent)    //output=Manage your Task Hello
+        // console.log(a.innerText) //will not show inner tag in Main Heading   //output=Manage Your Task.
+//Change Text Content of h2
+         //  a.textContent="Iqra Ashfaq";
+        //  a.style.color="red";
+        //  a.style.fontSize="10px"
+        // console.log(a.style);
+// ....................
+//Get and Set Attribute.
+ /*        
+        const ids=document.querySelector(".headline h2")
+         console.log(ids.getAttribute('id'))
+         ids.setAttribute('id','Heading');
+         console.log(ids.getAttribute('id'))
+*/
