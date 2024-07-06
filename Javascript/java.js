@@ -85,3 +85,64 @@ iterating Loop
             // const navs=document.querySelector('.nav-items').childNodes[1];
             // console.log(navs.nextElementSibling)
 // .............................. 
+// ClassList(add,remove,containe,toggle)
+            // const todo=document.querySelector('section.section-todo')
+            // console.log(todo.classList); 
+            // todo.classList.add('bg-dark');
+            // console.log(todo.classList)
+            // todo.classList.remove('bg-dark');
+            // console.log(todo);
+            // todo.classList.contains("container")  //answer true/false.
+            // todo.classList.toggle('bg-dark')   //if classlist contain it will remove ..if classlist doesn't exist it will add class.
+// .............................. 
+// document.createElement()
+// append
+// prepend 
+// remove
+            //   const todo=document.querySelector(".todo-list")
+            //   const newli=document.createElement('li')
+            //   newli.innerHTML="<span class=\"text\">Iqra Ashfaq</span> <div class=\"todo-buttons\"> <button class=\"todo-btn done\">Done</button><button class=\"todo-btn remove\">Remove</button>"
+            //   todo.append(newli);
+            //   console.log(todo)
+            //   const li=todo.children[0];
+            //   li.remove()
+// ..............................................
+ // Before  ,after
+            // jis Element koh access kiya us sy phly add krna to Before, agr bd mayn tp after.
+            // In append , Data add hota tha us element kay andar jis koh access kia ho GainNode.
+                        // const headline=document.querySelector('.headline')
+                        // console.log(headline)
+                        // const h1=document.createElement("h1")
+                        // h1.textContent="Iqra Ashfaq";
+                        // headline.after(h1);
+                        // console.log(headline)
+// ....................... 
+// Some Old method 
+//insertBefore,replaceChild,removeChild
+                //  const ul=document.querySelector('.todo-list');
+                //  const li=document.createElement("li");
+                //  li.textContent="Iqra Ashfaq";
+                //  const li_target=ul.children[0];
+                // //  ul.insertBefore(li,li_target)
+                // //  ul.replaceChild(li,li_target) 
+                // // ul.removeChild(li_target)
+// ........................ 
+// Static List Vs Live List
+    // 1-querySelectorAll---->static List
+    // 2-getElementByselct--->live list 
+            // const lis=document.querySelectorAll('.todo-list li')
+            // const ul=document.querySelector('.todo-list');
+            // const newli=document.createElement("li");
+            // newli.textContent="item-6";
+            // ul.append(newli);
+            // console.log(lis)     //will show 5 list newli not add in lis.
+        // ..............
+            //   const ul=document.querySelector('.todo-list');
+            //   const lis=ul.getElementsByTagName('li')
+            //// console.log(lis);
+            //   const newli=document.createElement("li");
+            //   newli.textContent="item-6";
+            //   ul.append(newli);
+            //   console.log(lis)    //Will add newli
+
+            
