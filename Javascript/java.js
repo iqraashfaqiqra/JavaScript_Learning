@@ -153,3 +153,52 @@ iterating Loop
                     // console.log(height);
 // .................. 
 // Event 
+// 3 way to create Event 
+    // 1-<button type="button" onclick="console.log("you Clicked")>Clicked me</button>
+    //2-onclick()
+    //3-addEvenetListener
+                //  const btn=document.querySelector('.btn-headline');
+                // 2nd mEthod  
+                            // btn.onclick=function()
+                            // {
+                            //     console.log("you Clicked Me");
+                            // }
+                    // 3rd method 
+                            //     btn.addEventListener('click',function()
+                            // {
+                            //     console.log(this); //if we create simple function "this" will be that function which call. 
+                            // })
+                        // .................
+                            // btn.addEventListener('click',()=>
+                            // {
+                            //     console.log(this); //if we create arrow function "this"  will be window
+                            // })
+// .......................... 
+// Button Examples
+         const buttons=document.querySelectorAll('.buttons button')
+         console.log(buttons)
+        //  1st loop
+                //  buttons.forEach(function(btn)
+                // {
+                //     btn.addEventListener("click",function()
+                // {
+                //     console.log(this)
+                // })
+                // })
+        //2nd loop
+                // for(let btn of buttons)
+                // {
+                //     btn.addEventListener('click',function()
+                // {
+                //     console.log(this)
+                // })
+                // }
+        //3rd Loop
+                // for(let i=0;i<buttons.length;i++)
+                // {
+                //  buttons[i].addEventListener('click',function()
+                // {
+                //     console.log(this)
+                // })
+                // }
+// .................................. 
