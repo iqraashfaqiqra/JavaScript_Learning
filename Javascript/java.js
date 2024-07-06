@@ -144,5 +144,12 @@ iterating Loop
             //   newli.textContent="item-6";
             //   ul.append(newli);
             //   console.log(lis)    //Will add newli
-
-            
+// ........................... 
+// How to Get dimension of Element
+//width,height,left ,right
+                    // const header=document.querySelector('header');
+                    // const info=header.getBoundingClientRect();
+                    // const height=header.getBoundingClientRect().height;
+                    // console.log(height);
+// .................. 
+// Event 
