@@ -175,8 +175,8 @@ iterating Loop
                             // })
 // .......................... 
 // Button Examples
-         const buttons=document.querySelectorAll('.buttons button')
-         console.log(buttons)
+        //  const buttons=document.querySelectorAll('.buttons button')
+        //  console.log(buttons)
         //  1st loop
                 //  buttons.forEach(function(btn)
                 // {
@@ -202,3 +202,16 @@ iterating Loop
                 // })
                 // }
 // .................................. 
+// Events (jb bhi eventlistner lgta hy to browser ak object pass krta hy us event kay against jo hm ny webApI koh pass kia hota).
+//using buttons.html file
+                        // const btns=document.querySelectorAll('.buttons button')
+                        // console.log(btns)
+                        // btns.forEach((btn)=>
+                        // {
+                        //         btn.addEventListener('click',(e)=>
+                        //         {
+                        //                 console.log(e.target);
+                        //                 console.log(e.currentTarget);
+                        //         })
+                        // })
+// ....................   
