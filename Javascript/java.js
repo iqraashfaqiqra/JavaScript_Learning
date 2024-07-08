@@ -217,3 +217,49 @@ iterating Loop
 // ....................   
 // Event Bubbling/Propagation
 // Event Capturing
+// **********************Event Bubling****************
+// Event Bubling usy khty jb granparent pr bhi event lga howa, parnet pr bhi or child pr bhi
+// lkn jb Child pr click kryn to child ki property to ayan lkn sth mayn parent or grandprnt bhi show hoya.
+//Event Bubling nechy sy uper ki trf call hoti,,,output:child->parent->grandparent
+//using Bubbling.html file
+                //  const  grandparent=document.querySelector('.grandparent');
+                //  const parent=document.querySelector('.parent');
+                //  const child=document.querySelector('.child');
+                // grandparent.addEventListener("click",(e)=>
+                // {
+                //         console.log("Grabnd");
+                // })
+                // parent.addEventListener("click",(e)=>
+                //         {
+                //                 console.log("Parent");
+                //         })
+                // child.addEventListener("click",(e)=>
+                //         {
+                //                 console.log("child");
+                //         })
+
+//************************Capturing*********************** */
+// same Like event Bubbling but output shown form above to below ....output=grandparent->parent->child
+                        // const  grandparent=document.querySelector('.grandparent');
+                        // const parent=document.querySelector('.parent');
+                        // const child=document.querySelector('.child');
+                        // grandparent.addEventListener("click",(e)=>
+                        // {
+                        // console.log("Grabnd");
+                        // },true)
+                        // parent.addEventListener("click",(e)=>
+                        // {
+                        //         console.log("Parent");
+                        // },true)
+                        // child.addEventListener("click",(e)=>
+                        // {
+                        //         console.log("child");
+                        // },true)
+//******************************Event Deligation****************************** */
+//hm ny sirf grandparent pr event listener lgya hy or child koh access kr skynn.
+                        //     const p=document.querySelector('.grandparent');
+                        //     console.log(p);
+                        //     p.addEventListener("click",(e)=>
+                        // {
+                        //         console.log(e.target)
+                        // })
