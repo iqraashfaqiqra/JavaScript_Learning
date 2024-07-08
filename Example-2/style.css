@@ -1,0 +1,60 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+form
+{
+    width:50%;
+    /* border:1px solid red; */
+}
+[type="text"]
+{
+    width:80%;
+    padding: 0.5rem;
+}
+[type="submit"]
+{
+    width:18%;
+    float: right;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    color:white;
+    background-color: black;
+}
+ul
+{
+    width:50%;
+    /* border:1px solid red; */
+    list-style: none;
+}
+li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block:1rem;
+    background-color: black;
+    color:white;
+}
+li>span
+{
+    width:70%;
+    padding:1rem;
+}
+li button
+{
+    padding: 1rem;
+}
