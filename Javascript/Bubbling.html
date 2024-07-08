@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling/Capturing</title>
+    <script src="./java.js" defer></script>
+    <style>
+       body
+       {
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+        main
+        {
+            width:30%;
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main *
+        {
+            padding: 1rem;
+        }
+        .grandparent
+        {
+            width:50%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            /* border: 1px solid black; */
+        }
+        .parent 
+        {
+            width:50%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* align-content: space-between; */
+            background-color: yellow;
+        }
+        .child
+        {
+            width:50%;
+            /* border:1px solid pink; */
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grandparent">grandparent
+            <div class="parent">parent
+                <div class="child">
+                    child
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
