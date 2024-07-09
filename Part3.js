@@ -59,11 +59,11 @@ output=  Script Start
 */
 //Call Back hell/Pyramid of Dom
 // :: using CallbackHell.html
-const h1=document.querySelector(".headeing-1");
-const h2=document.querySelector('.headeing-2');
-const h3=document.querySelector('.headeing-3');
-const h4=document.querySelector('.headeing-4');
-const h5=document.querySelector('.headeing-5');
+// const h1=document.querySelector(".headeing-1");
+// const h2=document.querySelector('.headeing-2');
+// const h3=document.querySelector('.headeing-3');
+// const h4=document.querySelector('.headeing-4');
+// const h5=document.querySelector('.headeing-5');
        /*
         setTimeout(()=>
                 {
@@ -218,6 +218,7 @@ const promise=new Promise((resolve,reject)=>{
 // ......................................
 // I want to resolve/reject promise after 2 second
 
+/*
                         function friedrice()
                         {
                                 const bucket=['vegetable','salt']
@@ -239,3 +240,108 @@ const promise=new Promise((resolve,reject)=>{
                         }
                         friedrice().then(()=>console.log("Accept"))
                                 .catch(()=>console.log("reject"));
+*/
+// ...........................................................
+// Problem Resolve 
+/*
+// 1st method 
+        const resolvefunc=Promise.resolve(5);
+        resolvefunc.then(val=>console.log(val));
+//2nd method
+ Promise.resolve(5).then(val=>console.log(val));
+ */
+
+// .............................................................
+//Promise Chaining
+//.then() function always return promise
+/*
+                function friedrice()
+                {
+                        return new Promise((resolve,reject)=>
+                        {
+                                resolve("Iqra");
+                        })
+                }
+                friedrice()
+                        .then((value)=>
+                        {
+                                console.log(value);
+                                value+=" Ashfaq";
+                                return Promise.resolve(value);   //return value;
+                        })
+                        .then((value)=>
+                        {
+                                console.log(value);
+                                value+=" Anza";
+                                return value;
+                        })
+                        .then((value)=>
+                        {
+                                console.log(value);
+                        })
+*/
+// .................
+//Above callBack hell/prymaid Dom
+//using callbackhell.html
+const h1=document.querySelector(".headeing-1");
+const h2=document.querySelector('.headeing-2');
+const h3=document.querySelector('.headeing-3');
+const h4=document.querySelector('.headeing-4');
+const h5=document.querySelector('.headeing-5');
+
+function changing(headeing,color,time)
+{
+    return new Promise((resolve,reject)=>
+{
+        if(resolve)
+        {
+                setTimeout(()=>{
+                        headeing.style.color=color;
+                        resolve();
+                },time)
+        }
+        else
+        {
+                reject();
+        }
+})
+}
+changing(h1,"red",1000).then(()=>{
+        changing(h2,"green",1000).then(()=>{
+                changing(h3,"pink",1000).then(()=>{
+                        changing(h4,"yellow",1000).then(()=>{
+                                changing(h5,"blue",1000).then(()=>{
+                                
+                                })
+                        })
+                })
+        })
+})
+
+//    if(headeing)
+//    {
+//         if(onsuccess)
+//         {
+//         setTimeout(()=>{
+//         headeing.style.color=color;
+//         onsuccess();
+//         },time)
+//         }
+//    }
+//    else
+//    {
+//      if(reject)
+//      {
+//         reject();
+//      }
+   
+
+changing(h1,"red",1000,()=>{
+        changing(h2,"pink",1000,()=>{
+                changing(h3,"yellow",1000,()=>{
+                        changing(h4,"green",1000,()=>{
+                                changing(h5,"blue",1000,()=>{},()=>console.log("h5 Doesn't Exist"))
+                        },()=>console.log("h4 doesn't exist"))
+                },()=>console.log("h3 Doesn't Exist"))
+        },()=>console.log("h2 Doesn't exist"))
+},()=>console.log("h1 doesn't Exist"));
