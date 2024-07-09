@@ -153,3 +153,89 @@ const h5=document.querySelector('.headeing-5');
                 },()=>{console.log("doesn't Exist")});
         },()=>{console.log("doesn't Exist")});
 */
+                // ...........................................
+
+//**************Promises******************* */
+/*
+const bucket=["vegetable","rice"];
+const promise=new Promise((resolve,reject)=>{
+        if(bucket.includes("vegetable"),bucket.includes('salt'))
+        {
+                resolve("Fried Rice");
+        }
+        else
+        {
+                reject("You Don't Have all ingredients");
+        }
+})
+//produce
+//consume
+
+                // promise.then((myfried)=>
+                // {
+                //         console.log("You",myfried,"Are ready");
+                // },(error)=>
+                // {
+                //         console.log(error);
+                // })
+
+
+//instead of using two callback in then use on call in then where then end use ,catch()
+        promise.then((myfried)=>
+                {
+                        console.log("You",myfried,"Are ready");
+                }).catch((error)=>{
+                        console.log(error)
+                })
+*/
+// ................................................... 
+// function Returning promise
+/*
+                function friedrice()
+                { 
+                        const bucket=["salt",'vegetables','onion'];
+                        return new Promise((resolve,reject)=>
+                        {
+                                if(bucket.includes('vegetables'),bucket.includes('salt'))
+                                {
+                                        resolve({value:"Fried Rice"});
+                                }
+                                else
+                                {
+                                        reject("Don't have sufficient Ingredients");
+                                }
+                        })
+                }
+                friedrice().then((obj)=>
+                {
+                        console.log(obj);
+                }).catch((error)=>
+                {
+                        console.log(error);
+                })
+*/
+
+// ......................................
+// I want to resolve/reject promise after 2 second
+
+                        function friedrice()
+                        {
+                                const bucket=['vegetable','salt']
+                                return new Promise((resolve,reject)=>
+                                {
+                                        const value=true;
+                                        setTimeout(()=>{
+                                                if(value)
+                                                        {
+                                                                resolve();
+                                                        }
+                                                        else
+                                                        {
+                                                                reject();
+                                                        }
+                                        },2000)
+                                
+                                })
+                        }
+                        friedrice().then(()=>console.log("Accept"))
+                                .catch(()=>console.log("reject"));
