@@ -41,3 +41,115 @@ output=  Script Start
                 // console.log("script ENd");
                 
 //**********Set Interval********************** */
+//same above settimeout but set interval (bar bar run hota).
+//Example in Part3_Example.html;
+
+// .....................................................
+
+// **************Call Back*********************
+                /*
+                function number(a,b,callback,multi)
+                {
+                        console.log(a,b)
+                        callback(a,b);
+                        multi(a,b);
+                }
+        number(1,2,(a,b)=>console.log(a+b),(a,b)=>console.log(a*b));
+
+*/
+//Call Back hell/Pyramid of Dom
+// :: using CallbackHell.html
+const h1=document.querySelector(".headeing-1");
+const h2=document.querySelector('.headeing-2');
+const h3=document.querySelector('.headeing-3');
+const h4=document.querySelector('.headeing-4');
+const h5=document.querySelector('.headeing-5');
+       /*
+        setTimeout(()=>
+                {
+                 h1.style.color="red";       
+                },1000)
+          setTimeout(()=>
+                {
+                h2.style.color="green";       
+                },2000)
+        setTimeout(()=>
+                {
+                        h3.style.color="blue";       
+                },3000)
+        setTimeout(()=>
+                {
+                        h3.style.color="yellow";       
+                },3000)
+        setTimeout(()=>
+                {
+                        h4.style.color="pink";       
+                },4000)
+        setTimeout(()=>
+                {
+                        h5.style.color="red";       
+                },5000)
+        /*
+//****************Call Back Hell*********** */
+/*
+    
+        setTimeout(()=>
+                {
+                h1.style.color="red";       
+                setTimeout(()=>
+                {
+                h2.style.color="green";       
+                        setTimeout(()=>
+                        {
+                                h3.style.color="blue";       
+                                        setTimeout(()=>
+                                {
+                                h3.style.color="yellow";       
+                                        setTimeout(()=>
+                                        {
+                                        h4.style.color="pink";       
+                                                setTimeout(()=>
+                                                {
+                                                h5.style.color="red";       
+                                                },5000)
+                                        },1000)
+                                },1000)
+                        },1000)
+                },1000)
+                },1000)
+        */
+        //......Above Example using Function
+        /*
+        function Color(element,clr,time,onsuccess,onfailure)
+        {
+                setTimeout(()=>
+                        {
+                        if(element)
+                        {
+                        element.style.color=clr;
+                        if(onsuccess)
+                                {
+                                        onsuccess();
+                                }
+                        }
+                        else
+                        {
+                                if(onfailure)
+                                        {
+                                                onfailure();
+                                        }
+                        }
+                        },time)
+                
+                
+        }
+        Color(h1,"red",1000,()=>{
+                Color(h2,"red",1000,()=>{
+                        Color(h3,"red",1000,()=>{
+                                Color(h4,"red",1000,()=>{
+                                        Color(h5,"red",1000,()=>{},()=>{console.log("doesn't Exist")});
+                                },()=>{console.log("doesn't Exist")});
+                        },()=>{console.log("doesn't Exist")});
+                },()=>{console.log("doesn't Exist")});
+        },()=>{console.log("doesn't Exist")});
+*/
