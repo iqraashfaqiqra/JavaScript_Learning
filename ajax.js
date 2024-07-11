@@ -150,3 +150,40 @@
                         )
                         .then(response=>console.log(response))
 */
+// *******************************FETCH**********************************
+// Fetch Return Promise 
+
+const URL="https://jsonplaceholder.typicode.com/posts";
+// const a=fetch(URL);
+// console.log(a); //fetch return promise  so we can call .then
+
+// fetch(URL).then(response=>{response.json()).then(data=>console.log(data))
+// ...................
+                // fetch(URL).then(response=>
+                // {
+                //     if(response.ok)
+                //     {
+                //         return response.json();
+                //     }
+                //     else
+                //     {
+                //         throw new Error("something went wronh")
+                //     }
+                // }
+                // ).then(data=> data)
+                // .catch(error=>console.log(error))  //catch chly ga jb network problem ho ga 
+
+// ASYNC Await 
+   async function getpost()
+   {
+       const response=await fetch(URL);
+       console.log(response)
+       const data=await response.json();
+       return data
+
+   }
+getpost().then(data=>console.log(data))
+
+// .............................
+
+
