@@ -1,0 +1,16 @@
+Donwload Git Bash 
+    git --version
+-> git config --global user.name "iqraashfaqiqra"
+-> git config --global user.email "Iqraashfaq36@gmail.com"
+-> git config --global user.email (output="Iqraashfaq36@gmail.com")
+<------------------------------ >
+open Visual Studion 
+->git init 
+->git status
+->git add index.html
+->git commit -m "inital message"
+<-------------------------->
+agr 1k sy zyda commit hyn or hm peechy jana chhaty
+->git log (list of commit and copy addres)
+>git checkout <address>
+->git checkout master(last changing).
