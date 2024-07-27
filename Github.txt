@@ -14,3 +14,19 @@ agr 1k sy zyda commit hyn or hm peechy jana chhaty
 ->git log (list of commit and copy addres)
 >git checkout <address>
 ->git checkout master(last changing).
+
+-------------------------------->
+Making Branches 
+->git branch dev 
+->git branch (list of branches)
+->git checkout dev(open dev branch)
+->git checkout -b devinside(dev kay andhr new branch)
+  add multiply.js and add in devinside 
+->git checkout dev
+->git log (multiply file not shown in dev because it created in devinside)
+when devinside file then merge to dev
+->git merge devinside
+->git checkout master
+->git merge dev
+
+----------------------->
